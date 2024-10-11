@@ -1,12 +1,14 @@
  <!-- {{messages|json}} -->
- <button class="btn btn-success downBut" (click)="pageDown()">Page Down</button>
- <div class="content">
-    <div 
-    *ngFor="let message of messages" 
-    class="message"
-    [ngClass]="message.userName=='Matuka'?'mymessage':''">
-    <div class="username">{{message.userName}}</div>
-    <div class="uzi">{{message.uzi}}</div>
-    </div>
-</div> 
-<div id="pageend"></div>
+ <div class="container">
+     
+     <div class="content">
+        <div
+        *ngFor="let message of messages"
+        class="message"
+        [ngClass]="message.userName=='Matuka'?'mymessage':''">
+        <div class="username">{{message.userName}}</div>
+        <div class="uzi">{{message.uzi}}</div>
+        </div>
+     </div> 
+     <div id="pageend"></div>
+ </div>

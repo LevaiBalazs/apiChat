@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
+  
+  pageDown(){
+    document.getElementById("pageend")?.scrollIntoView(
+      {behavior:"smooth", block:"end", inline:"nearest"}
+    );
+}
 }

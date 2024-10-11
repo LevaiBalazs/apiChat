@@ -1,8 +1,4 @@
-
 <div class="input-group mb-3">
-    <span class="-">
-
-    </span>
-    <input type="text" [(ngModel)]="userName" class="form-control" placeholder="Username">
-    <button (click)="login()" type="button" class="btn btn-success">Login</button>
+    <input [(ngModel)]="userName" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+    <button (click)="login()" type="button" class="btn btn-primary">Login</button>
 </div>

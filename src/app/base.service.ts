@@ -14,9 +14,9 @@ export class BaseService {
 
   constructor(private http:HttpClient) { 
     this.downloadAllMessage()
-    setInterval(()=>this.http.get(this.url).forEach(
-      (res)=>this.messageSubject.next(res) 
-    ), 5000)
+    //  setInterval(()=>this.http.get(this.url).forEach(
+    //    (res)=>this.messageSubject.next(res) 
+    //  ), 5000)
   }
 
   addMessage(message:string){
