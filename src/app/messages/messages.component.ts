@@ -9,7 +9,7 @@ import { NavbarComponent } from '../navbar/navbar.component';
   templateUrl: './messages.component.html',
   styleUrl: './messages.component.css'
 })
-export class MessagesComponent implements OnInit, NavbarComponent{
+export class MessagesComponent implements OnInit{
   messages:any=[]
   userName=""
   feliratkozas!:Subscription
@@ -23,8 +23,10 @@ export class MessagesComponent implements OnInit, NavbarComponent{
       (res)=>this.userName=res
     )
     }
-  pageDown(): void {
-    throw new Error('Method not implemented.');
+    pageDown(){
+      document.getElementById("pageend")?.scrollIntoView(
+        {behavior:"smooth", block:"end", inline:"nearest"}
+      );
   }
 
   ngOnInit(): void {    
