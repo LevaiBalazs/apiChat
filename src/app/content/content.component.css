@@ -1,0 +1,11 @@
+app-messages{
+    background: #504572;
+    height: 75%;
+    display:block;
+}
+app-send{
+    background-color: #1a7e60;
+    display:block;
+    height: 25%;
+    
+}

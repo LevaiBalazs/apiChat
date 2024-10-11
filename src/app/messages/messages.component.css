@@ -1,0 +1,31 @@
+.message{
+    margin:10px 3px;
+    width: 80%;
+    padding: 3px;
+    float:left;
+    display: block;
+    background-color: lightsalmon;
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 5px grey;
+    -moz-box-shadow: 5px 5px 5px grey;
+    box-shadow: 5px 5px 5px grey;
+}
+.mymessage{
+    float:right;
+    background-color: greenyellow;
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 5px grey;
+    -moz-box-shadow: 5px 5px 5px grey;
+    box-shadow: 5px 5px 5px grey; 
+}
+
+.content::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.downBut{
+    
+    float: left;
+}

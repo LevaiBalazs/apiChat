@@ -1,0 +1,13 @@
+app-content{
+    display: block;
+    height: 95vh;
+}
+app-navbar{
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5vh;
+    background-color: aqua;
+}
